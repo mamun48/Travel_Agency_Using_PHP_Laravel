@@ -39,7 +39,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="{{asset('assets/images/logo.png')}}" alt="">
+                        <img src="{{asset('assets/images/ApexTravel.png')}}" alt="" style="width: 100px; height: auto; margin-top: -15px;">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
@@ -95,7 +95,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
+              <p>Copyright © 2036 <a href="#">Apex Travel</a> Company. All rights reserved. 
               <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a> Distribution: <a href="https://themewagon.com target="_blank" >ThemeWagon</a></p>
             </div>
           </div>

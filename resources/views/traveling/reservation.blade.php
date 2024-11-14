@@ -87,15 +87,15 @@
               </div>
               <div class="col-lg-12">
                   <fieldset>
-                      <label for="chooseDestination" class="form-label">Choose Your Destination</label>
-                      <input  type="text" value="{{$city->name}}" name="destination" class="Name" required>
+                      {{-- <label for="chooseDestination" class="form-label">Choose Your Destination</label> --}}
+                      <input  type="hidden" value="{{$city->name}}" name="destination" class="Name" required>
                   </fieldset>
               </div>
 
               <div class="col-lg-12">
                 <fieldset>
-                    <label for="chooseDestination" class="form-label">User Id</label>
-                    <input  type="text" value="{{ Auth::user()->id}} " name="user_id" class="Name" required>
+                    {{-- <label for="chooseDestination" class="form-label">User Id</label> --}}
+                    <input type="hidden" value="{{Auth::user()->id}} " name="user_id" class="Name" required>
                 </fieldset>
             </div>
               

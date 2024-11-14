@@ -8,6 +8,7 @@ use App\Models\Reservation\Reservation;
 use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Http\Request;
+use Redirect;
 use Session;
 
 class TravelingController extends Controller
@@ -53,7 +54,7 @@ class TravelingController extends Controller
             {
                 $price = Session::put('price',$city->price * $request->num_guests);
                 $newPrice = Session::get($price);
-                echo "reservation is made successfully";
+                return Redirect::route('traveling.pay');
             }else
             {
                 echo "reservation is not made!";
@@ -67,6 +68,15 @@ class TravelingController extends Controller
         
 
        // return view('traveling.reservation',compact('city'));
+    }
+    public function payWithPaypal()
+    {
+        return view('traveling.pay');
+    }
+    public function success()
+    {
+        Session::forget('price');
+        return view('traveling.success');
     }
     
 }
